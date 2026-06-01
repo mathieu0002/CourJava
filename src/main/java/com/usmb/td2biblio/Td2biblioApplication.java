@@ -1,0 +1,13 @@
+package com.usmb.td2biblio;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class Td2biblioApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(Td2biblioApplication.class, args);
+	}
+
+}
