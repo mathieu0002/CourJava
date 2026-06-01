@@ -57,7 +57,7 @@ public class LivreControllerTest {
     void testSaveLivre() {
         Livre livre = new Livre();
         livre.setTitre("Spring");
-        livre.setAuteur("Test");
+        livre.setAuteurId(1);
         livre.setNbPages(2);
         livre.setEditeur("Java");
         livre.setDatePublication(LocalDate.of(1762, 4, 3));
@@ -83,5 +83,25 @@ public class LivreControllerTest {
         Livre livreUpdated = restTemplate.getForObject(
                 "http://localhost:" + port + "/biblio/livre/3", Livre.class);
         assertEquals(newNbPages, livreUpdated.getNbPages());
+    }
+
+    // GET /biblio/livre/auteur/{auteurId}
+    @Test
+    void testGetLivresByAuteurId() {
+        Livre[] livres = this.restTemplate.getForObject(
+                "http://localhost:" + port + "/biblio/livre/auteur/1", Livre[].class);
+
+        assertThat(livres).isNotEmpty();
+        assertThat(livres[0].getTitre()).isEqualTo("Les Misérables");
+    }
+
+    // GET /biblio/livre/search?titre=fictions  (vérifie aussi le IgnoreCase)
+    @Test
+    void testGetLivresByTitreContaining() {
+        Livre[] livres = this.restTemplate.getForObject(
+                "http://localhost:" + port + "/biblio/livre/search?titre=fictions", Livre[].class);
+
+        assertThat(livres).isNotEmpty();
+        assertThat(livres[0].getTitre()).isEqualTo("Fictions");
     }
 }

@@ -7,23 +7,20 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
 @Entity
-@Table(name = "livre")
-public class Livre {
+@Table(name = "auteur")
+public class Auteur {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private String titre;
-    private Integer auteurId; 
-    private Integer nbPages;
-    private String editeur;
-    private LocalDate datePublication;
-    private LocalDateTime createdAt;
-    private LocalDateTime updatedAt;
+    private String nom;
+    private String prenom;
+    private String nationalite;
+    private LocalDate dateNaissance;
+    private LocalDate dateDeces;
 }

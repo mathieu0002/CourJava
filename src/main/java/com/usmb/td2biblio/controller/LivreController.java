@@ -45,4 +45,16 @@ public class LivreController {
         livreService.deleteLivre(id);
         return ResponseEntity.ok().body("Livre successfully deleted");
     }
+
+    // /biblio/livre/auteur/{auteurId}
+    @GetMapping("/auteur/{auteurId}")
+    public ResponseEntity<List<Livre>> getLivresByAuteurId(@PathVariable Integer auteurId) {
+        return ResponseEntity.ok().body(livreService.getByAuteurId(auteurId));
+    }
+
+    // /biblio/livre/search?titre=miséra
+    @GetMapping("/search")
+    public ResponseEntity<List<Livre>> getLivresByTitreContaining(@RequestParam String titre) {
+        return ResponseEntity.ok().body(livreService.getByTitreContainingIgnoreCase(titre));
+    }
 }

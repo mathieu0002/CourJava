@@ -60,7 +60,7 @@ public class LivreControllerSansAssertj {
     void testSaveLivre() {
         Livre livre = new Livre();
         livre.setTitre("Spring");
-        livre.setAuteur("Test");
+        livre.setAuteurId(1);
         livre.setNbPages(2);
         livre.setEditeur("Java");
         livre.setDatePublication(LocalDate.of(1762, 4, 3));

@@ -53,4 +53,12 @@ public class LivreService {
         livreRepo.deleteById(id);
         log.info("Livre id {} deleted", id);
     }
+
+    public List<Livre> getByAuteurId(Integer auteurId) {
+        return livreRepo.findByAuteurId(auteurId);
+    }
+
+    public List<Livre> getByTitreContainingIgnoreCase(String titre) {
+        return livreRepo.findByTitreContainingIgnoreCase(titre);
+    }
 }

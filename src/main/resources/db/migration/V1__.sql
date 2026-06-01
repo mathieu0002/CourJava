@@ -10,3 +10,4 @@ CREATE TABLE livre
     updated_at       TIMESTAMP,
     CONSTRAINT pk_livre PRIMARY KEY (id)
 );
+
