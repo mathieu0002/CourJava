@@ -35,7 +35,7 @@ public class LivreControllerMockTest {
     @Test
     void testWithMockMvcTester() {
         assertThat(mvc.get().uri("/biblio/livre/1"))
-                .bodyText().contains("Titre 1");
+                .bodyText().contains("Les Misérables");
     }
 
     @Test
@@ -47,6 +47,6 @@ public class LivreControllerMockTest {
 
         String json = result.getResponse().getContentAsString();
         Livre livre = objectMapper.readValue(json, Livre.class);
-        assertThat(livre.getTitre()).isEqualTo("Titre 1");
+        assertThat(livre.getTitre()).isEqualTo("Les Misérables");
     }
 }

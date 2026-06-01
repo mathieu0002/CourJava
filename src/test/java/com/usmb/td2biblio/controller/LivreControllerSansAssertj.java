@@ -31,8 +31,8 @@ public class LivreControllerSansAssertj {
 
         assertNotNull(livres);
         assertTrue(livres.length > 0);
-        assertEquals("Titre 1", livres[0].getTitre());
-        assertEquals("Titre 2", livres[1].getTitre());
+        assertEquals("Les Misérables", livres[0].getTitre());
+        assertEquals("Fictions", livres[1].getTitre());
     }
 
     // Teste qu'on récupère bien le livre avec l'id 1
@@ -42,7 +42,7 @@ public class LivreControllerSansAssertj {
                 "http://localhost:" + port + "/biblio/livre/1", Livre.class);
 
         assertNotNull(livre);
-        assertEquals("Titre 1", livre.getTitre());
+        assertEquals("Les Misérables", livre.getTitre());
     }
 
     // Ce test est VOLONTAIREMENT là pour montrer un test qui échoue
@@ -69,7 +69,7 @@ public class LivreControllerSansAssertj {
                 "http://localhost:" + port + "/biblio/livre/", livre, String.class);
 
         String response = restTemplate.getForObject(
-                "http://localhost:" + port + "/biblio/livre/3", String.class);
+                "http://localhost:" + port + "/biblio/livre/4", String.class);
 
         assertNotNull(response);
         assertTrue(response.contains("Spring"));

@@ -31,8 +31,8 @@ public class LivreControllerTest {
                 "http://localhost:" + port + "/biblio/livre/", Livre[].class))
                 .satisfies(livres -> {
                     assertThat(livres).isNotEmpty();
-                    assertThat(livres[0].getTitre()).isEqualTo("Titre 1");
-                    assertThat(livres[1].getTitre()).isEqualTo("Titre 2");
+                    assertThat(livres[0].getTitre()).isEqualTo("Les Misérables");
+                    assertThat(livres[1].getTitre()).isEqualTo("Fictions");
                 });
     }
 
@@ -66,7 +66,7 @@ public class LivreControllerTest {
                 "http://localhost:" + port + "/biblio/livre/", livre, String.class);
 
         assertThat(this.restTemplate.getForObject(
-                "http://localhost:" + port + "/biblio/livre/3", String.class))
+                "http://localhost:" + port + "/biblio/livre/4", String.class))
                 .contains("Spring");
     }
 
