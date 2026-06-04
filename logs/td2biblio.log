@@ -9553,3 +9553,397 @@ org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique co
 2026-06-01T10:07:29.568+02:00  INFO 8184 --- [td2biblio] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2026-06-01T10:07:29.568+02:00  INFO 8184 --- [td2biblio] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
 2026-06-01T10:07:29.610+02:00  INFO 8184 --- [td2biblio] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2026-06-04T08:12:11.602+02:00  INFO 44395 --- [td2biblio] [Test worker] c.u.td2biblio.Td2biblioApplicationTests  : Starting Td2biblioApplicationTests using Java 26.0.1 with PID 44395 (started by servonnm in /Users/servonnm/Documents/Ecole/R6.A.06/td2biblio)
+2026-06-04T08:12:11.602+02:00  INFO 44395 --- [td2biblio] [Test worker] c.u.td2biblio.Td2biblioApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2026-06-04T08:12:12.024+02:00  INFO 44395 --- [td2biblio] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-04T08:12:12.053+02:00  INFO 44395 --- [td2biblio] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 2 JPA repository interfaces.
+2026-06-04T08:12:12.478+02:00  INFO 44395 --- [td2biblio] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-04T08:12:12.573+02:00  INFO 44395 --- [td2biblio] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@424028be
+2026-06-04T08:12:12.573+02:00  INFO 44395 --- [td2biblio] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-04T08:12:12.592+02:00  INFO 44395 --- [td2biblio] [Test worker] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5432/TD2Java?currentSchema=biblio (PostgreSQL 18.3)
+2026-06-04T08:12:12.624+02:00  INFO 44395 --- [td2biblio] [Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 3 migrations (execution time 00:00.014s)
+2026-06-04T08:12:12.663+02:00  INFO 44395 --- [td2biblio] [Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema "biblio": 3
+2026-06-04T08:12:12.665+02:00  INFO 44395 --- [td2biblio] [Test worker] o.f.core.internal.command.DbMigrate      : Schema "biblio" is up to date. No migration necessary.
+2026-06-04T08:12:12.721+02:00  INFO 44395 --- [td2biblio] [Test worker] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-04T08:12:12.766+02:00  INFO 44395 --- [td2biblio] [Test worker] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-04T08:12:13.064+02:00  INFO 44395 --- [td2biblio] [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-04T08:12:13.124+02:00  INFO 44395 --- [td2biblio] [Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/TD2Java?currentSchema=biblio]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.3
+	Default catalog/schema: TD2Java/biblio
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-04T08:12:13.644+02:00  INFO 44395 --- [td2biblio] [Test worker] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-04T08:12:13.648+02:00  INFO 44395 --- [td2biblio] [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-04T08:12:13.689+02:00  INFO 44395 --- [td2biblio] [Test worker] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-04T08:12:13.820+02:00  WARN 44395 --- [td2biblio] [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-04T08:12:14.146+02:00  INFO 44395 --- [td2biblio] [Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-06-04T08:12:14.174+02:00  INFO 44395 --- [td2biblio] [Test worker] c.u.td2biblio.Td2biblioApplicationTests  : Started Td2biblioApplicationTests in 2.725 seconds (process running for 3.512)
+2026-06-04T08:12:14.468+02:00  INFO 44395 --- [td2biblio] [Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.usmb.td2biblio.controller.AuteurControllerMockTest]: AuteurControllerMockTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-06-04T08:12:14.474+02:00  INFO 44395 --- [td2biblio] [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.usmb.td2biblio.Td2biblioApplication for test class com.usmb.td2biblio.controller.AuteurControllerMockTest
+2026-06-04T08:12:14.474+02:00  INFO 44395 --- [td2biblio] [Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.usmb.td2biblio.controller.AuteurControllerMockTest]: AuteurControllerMockTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-06-04T08:12:14.475+02:00  INFO 44395 --- [td2biblio] [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.usmb.td2biblio.Td2biblioApplication for test class com.usmb.td2biblio.controller.AuteurControllerMockTest
+2026-06-04T08:12:14.482+02:00  INFO 44395 --- [td2biblio] [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-06-04T08:12:14.482+02:00  INFO 44395 --- [td2biblio] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-06-04T08:12:14.483+02:00  INFO 44395 --- [td2biblio] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2026-06-04T08:12:14.699+02:00  INFO 44395 --- [td2biblio] [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-06-04T08:12:14.700+02:00  INFO 44395 --- [td2biblio] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-06-04T08:12:14.700+02:00  INFO 44395 --- [td2biblio] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2026-06-04T08:12:14.717+02:00  INFO 44395 --- [td2biblio] [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-06-04T08:12:14.717+02:00  INFO 44395 --- [td2biblio] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-06-04T08:12:14.718+02:00  INFO 44395 --- [td2biblio] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2026-06-04T08:12:14.909+02:00  INFO 44395 --- [td2biblio] [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-06-04T08:12:14.910+02:00  INFO 44395 --- [td2biblio] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-06-04T08:12:14.910+02:00  INFO 44395 --- [td2biblio] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2026-06-04T08:12:14.920+02:00  INFO 44395 --- [td2biblio] [Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.usmb.td2biblio.controller.AuteurControllerTest]: AuteurControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-06-04T08:12:14.923+02:00  INFO 44395 --- [td2biblio] [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.usmb.td2biblio.Td2biblioApplication for test class com.usmb.td2biblio.controller.AuteurControllerTest
+2026-06-04T08:12:14.923+02:00  INFO 44395 --- [td2biblio] [Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.usmb.td2biblio.controller.AuteurControllerTest]: AuteurControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-06-04T08:12:14.923+02:00  INFO 44395 --- [td2biblio] [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.usmb.td2biblio.Td2biblioApplication for test class com.usmb.td2biblio.controller.AuteurControllerTest
+2026-06-04T08:12:14.937+02:00  INFO 44395 --- [td2biblio] [Test worker] c.u.t.controller.AuteurControllerTest    : Starting AuteurControllerTest using Java 26.0.1 with PID 44395 (started by servonnm in /Users/servonnm/Documents/Ecole/R6.A.06/td2biblio)
+2026-06-04T08:12:14.938+02:00  INFO 44395 --- [td2biblio] [Test worker] c.u.t.controller.AuteurControllerTest    : No active profile set, falling back to 1 default profile: "default"
+2026-06-04T08:12:14.999+02:00  INFO 44395 --- [td2biblio] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-04T08:12:15.002+02:00  INFO 44395 --- [td2biblio] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 2 JPA repository interfaces.
+2026-06-04T08:12:15.110+02:00  INFO 44395 --- [td2biblio] [Test worker] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 0 (http)
+2026-06-04T08:12:15.120+02:00  INFO 44395 --- [td2biblio] [Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-04T08:12:15.120+02:00  INFO 44395 --- [td2biblio] [Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-04T08:12:15.141+02:00  INFO 44395 --- [td2biblio] [Test worker] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 203 ms
+2026-06-04T08:12:15.190+02:00  INFO 44395 --- [td2biblio] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-06-04T08:12:15.226+02:00  INFO 44395 --- [td2biblio] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@15b53c34
+2026-06-04T08:12:15.226+02:00  INFO 44395 --- [td2biblio] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-06-04T08:12:15.227+02:00  INFO 44395 --- [td2biblio] [Test worker] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5432/TD2Java?currentSchema=biblio (PostgreSQL 18.3)
+2026-06-04T08:12:15.232+02:00  INFO 44395 --- [td2biblio] [Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 3 migrations (execution time 00:00.002s)
+2026-06-04T08:12:15.252+02:00  INFO 44395 --- [td2biblio] [Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema "biblio": 3
+2026-06-04T08:12:15.252+02:00  INFO 44395 --- [td2biblio] [Test worker] o.f.core.internal.command.DbMigrate      : Schema "biblio" is up to date. No migration necessary.
+2026-06-04T08:12:15.258+02:00  INFO 44395 --- [td2biblio] [Test worker] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-04T08:12:15.266+02:00  INFO 44395 --- [td2biblio] [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-04T08:12:15.269+02:00  INFO 44395 --- [td2biblio] [Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/TD2Java?currentSchema=biblio]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.3
+	Default catalog/schema: TD2Java/biblio
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-04T08:12:15.280+02:00  INFO 44395 --- [td2biblio] [Test worker] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-04T08:12:15.281+02:00  INFO 44395 --- [td2biblio] [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-04T08:12:15.295+02:00  WARN 44395 --- [td2biblio] [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-04T08:12:15.421+02:00  INFO 44395 --- [td2biblio] [Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-06-04T08:12:15.435+02:00  INFO 44395 --- [td2biblio] [Test worker] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 51324 (http) with context path '/'
+2026-06-04T08:12:15.436+02:00  INFO 44395 --- [td2biblio] [Test worker] c.u.t.controller.AuteurControllerTest    : Started AuteurControllerTest in 0.51 seconds (process running for 4.774)
+2026-06-04T08:12:15.496+02:00  INFO 44395 --- [td2biblio] [http-nio-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-04T08:12:15.497+02:00  INFO 44395 --- [td2biblio] [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-04T08:12:15.497+02:00  INFO 44395 --- [td2biblio] [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-06-04T08:12:15.670+02:00  INFO 44395 --- [td2biblio] [Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.usmb.td2biblio.controller.LivreControllerMockTest]: LivreControllerMockTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-06-04T08:12:15.670+02:00  INFO 44395 --- [td2biblio] [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.usmb.td2biblio.Td2biblioApplication for test class com.usmb.td2biblio.controller.LivreControllerMockTest
+2026-06-04T08:12:15.671+02:00  INFO 44395 --- [td2biblio] [Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.usmb.td2biblio.controller.LivreControllerMockTest]: LivreControllerMockTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-06-04T08:12:15.671+02:00  INFO 44395 --- [td2biblio] [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.usmb.td2biblio.Td2biblioApplication for test class com.usmb.td2biblio.controller.LivreControllerMockTest
+2026-06-04T08:12:15.673+02:00  INFO 44395 --- [td2biblio] [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-06-04T08:12:15.673+02:00  INFO 44395 --- [td2biblio] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-06-04T08:12:15.673+02:00  INFO 44395 --- [td2biblio] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2026-06-04T08:12:15.680+02:00  INFO 44395 --- [td2biblio] [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-06-04T08:12:15.680+02:00  INFO 44395 --- [td2biblio] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-06-04T08:12:15.681+02:00  INFO 44395 --- [td2biblio] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2026-06-04T08:12:15.684+02:00  INFO 44395 --- [td2biblio] [Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.usmb.td2biblio.controller.LivreControllerSansAssertj]: LivreControllerSansAssertj does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-06-04T08:12:15.685+02:00  INFO 44395 --- [td2biblio] [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.usmb.td2biblio.Td2biblioApplication for test class com.usmb.td2biblio.controller.LivreControllerSansAssertj
+2026-06-04T08:12:15.685+02:00  INFO 44395 --- [td2biblio] [Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.usmb.td2biblio.controller.LivreControllerSansAssertj]: LivreControllerSansAssertj does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-06-04T08:12:15.686+02:00  INFO 44395 --- [td2biblio] [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.usmb.td2biblio.Td2biblioApplication for test class com.usmb.td2biblio.controller.LivreControllerSansAssertj
+2026-06-04T08:12:15.709+02:00  INFO 44395 --- [td2biblio] [http-nio-auto-1-exec-6] c.usmb.td2biblio.service.LivreService    : Livre updated with id 3
+2026-06-04T08:12:15.737+02:00  INFO 44395 --- [td2biblio] [http-nio-auto-1-exec-10] c.usmb.td2biblio.service.LivreService    : Livre saved with id 14
+2026-06-04T08:12:15.744+02:00  INFO 44395 --- [td2biblio] [Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.usmb.td2biblio.controller.LivreControllerTest]: LivreControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-06-04T08:12:15.745+02:00  INFO 44395 --- [td2biblio] [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.usmb.td2biblio.Td2biblioApplication for test class com.usmb.td2biblio.controller.LivreControllerTest
+2026-06-04T08:12:15.745+02:00  INFO 44395 --- [td2biblio] [Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.usmb.td2biblio.controller.LivreControllerTest]: LivreControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-06-04T08:12:15.745+02:00  INFO 44395 --- [td2biblio] [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.usmb.td2biblio.Td2biblioApplication for test class com.usmb.td2biblio.controller.LivreControllerTest
+2026-06-04T08:12:15.762+02:00  INFO 44395 --- [td2biblio] [http-nio-auto-1-exec-4] c.usmb.td2biblio.service.LivreService    : Livre updated with id 3
+2026-06-04T08:12:15.799+02:00  INFO 44395 --- [td2biblio] [http-nio-auto-1-exec-9] c.usmb.td2biblio.service.LivreService    : Livre saved with id 15
+2026-06-04T08:12:15.840+02:00  INFO 44395 --- [td2biblio] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-04T08:12:15.841+02:00  INFO 44395 --- [td2biblio] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-04T08:12:15.842+02:00  INFO 44395 --- [td2biblio] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-04T08:12:15.843+02:00  INFO 44395 --- [td2biblio] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-04T08:12:15.845+02:00  INFO 44395 --- [td2biblio] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-04T08:12:15.847+02:00  INFO 44395 --- [td2biblio] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-04T08:12:15.847+02:00  INFO 44395 --- [td2biblio] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2026-06-04T08:12:15.847+02:00  INFO 44395 --- [td2biblio] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2026-06-04T08:12:31.796+02:00  INFO 44465 --- [td2biblio] [main] c.usmb.td2biblio.Td2biblioApplication    : Starting Td2biblioApplication using Java 26.0.1 with PID 44465 (/Users/servonnm/Documents/Ecole/R6.A.06/td2biblio/build/classes/java/main started by servonnm in /Users/servonnm/Documents/Ecole/R6.A.06/td2biblio)
+2026-06-04T08:12:31.797+02:00  INFO 44465 --- [td2biblio] [main] c.usmb.td2biblio.Td2biblioApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-06-04T08:12:32.022+02:00  INFO 44465 --- [td2biblio] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-04T08:12:32.037+02:00  INFO 44465 --- [td2biblio] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 2 JPA repository interfaces.
+2026-06-04T08:12:32.182+02:00  INFO 44465 --- [td2biblio] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-06-04T08:12:32.186+02:00  INFO 44465 --- [td2biblio] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-04T08:12:32.186+02:00  INFO 44465 --- [td2biblio] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-04T08:12:32.202+02:00  INFO 44465 --- [td2biblio] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 390 ms
+2026-06-04T08:12:32.343+02:00  INFO 44465 --- [td2biblio] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-04T08:12:32.404+02:00  INFO 44465 --- [td2biblio] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@566c1e71
+2026-06-04T08:12:32.404+02:00  INFO 44465 --- [td2biblio] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-04T08:12:32.413+02:00  INFO 44465 --- [td2biblio] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5432/TD2Java?currentSchema=biblio (PostgreSQL 18.3)
+2026-06-04T08:12:32.429+02:00  INFO 44465 --- [td2biblio] [main] o.f.core.internal.command.DbValidate     : Successfully validated 3 migrations (execution time 00:00.007s)
+2026-06-04T08:12:32.458+02:00  INFO 44465 --- [td2biblio] [main] o.f.core.internal.command.DbMigrate      : Current version of schema "biblio": 3
+2026-06-04T08:12:32.459+02:00  INFO 44465 --- [td2biblio] [main] o.f.core.internal.command.DbMigrate      : Schema "biblio" is up to date. No migration necessary.
+2026-06-04T08:12:32.490+02:00  INFO 44465 --- [td2biblio] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-04T08:12:32.505+02:00  INFO 44465 --- [td2biblio] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-04T08:12:32.627+02:00  INFO 44465 --- [td2biblio] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-04T08:12:32.656+02:00  INFO 44465 --- [td2biblio] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/TD2Java?currentSchema=biblio]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.3
+	Default catalog/schema: TD2Java/biblio
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-04T08:12:32.929+02:00  INFO 44465 --- [td2biblio] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-04T08:12:32.931+02:00  INFO 44465 --- [td2biblio] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-04T08:12:32.957+02:00  INFO 44465 --- [td2biblio] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-04T08:12:33.016+02:00  WARN 44465 --- [td2biblio] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-04T08:12:33.139+02:00  INFO 44465 --- [td2biblio] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-06-04T08:12:33.163+02:00  INFO 44465 --- [td2biblio] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-06-04T08:12:33.166+02:00  INFO 44465 --- [td2biblio] [main] c.usmb.td2biblio.Td2biblioApplication    : Started Td2biblioApplication in 1.502 seconds (process running for 1.633)
+2026-06-04T08:14:54.870+02:00  INFO 44465 --- [td2biblio] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-04T08:14:54.871+02:00  INFO 44465 --- [td2biblio] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-04T08:14:54.872+02:00  INFO 44465 --- [td2biblio] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-06-04T08:15:11.301+02:00  INFO 44465 --- [td2biblio] [http-nio-8080-exec-6] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x050xf70x010x000x050xf30x030x030xb90xdd0x0bN]0xf10x9b0x11P0x04'`0xf6wv0xc80xb7'0xafm0xf20xcd0xb6_0xd4>0x1aB0x10O0x830xe0 ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:391) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:270) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.21.jar:11.0.21]
+	at java.base/java.lang.Thread.run(Thread.java:1516) ~[na:na]
+
+2026-06-04T08:19:19.893+02:00  INFO 44465 --- [td2biblio] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-04T08:19:19.896+02:00  INFO 44465 --- [td2biblio] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-04T08:19:19.898+02:00  INFO 44465 --- [td2biblio] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-04T08:19:19.903+02:00  INFO 44465 --- [td2biblio] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-04T08:19:19.904+02:00  INFO 44465 --- [td2biblio] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-04T08:19:30.228+02:00  INFO 44668 --- [td2biblio] [main] c.usmb.td2biblio.Td2biblioApplication    : Starting Td2biblioApplication using Java 26.0.1 with PID 44668 (/Users/servonnm/Documents/Ecole/R6.A.06/td2biblio/build/classes/java/main started by servonnm in /Users/servonnm/Documents/Ecole/R6.A.06/td2biblio)
+2026-06-04T08:19:30.229+02:00  INFO 44668 --- [td2biblio] [main] c.usmb.td2biblio.Td2biblioApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-06-04T08:19:30.470+02:00  INFO 44668 --- [td2biblio] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-04T08:19:30.486+02:00  INFO 44668 --- [td2biblio] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 2 JPA repository interfaces.
+2026-06-04T08:19:30.634+02:00  INFO 44668 --- [td2biblio] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-06-04T08:19:30.639+02:00  INFO 44668 --- [td2biblio] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-04T08:19:30.639+02:00  INFO 44668 --- [td2biblio] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-04T08:19:30.656+02:00  INFO 44668 --- [td2biblio] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 413 ms
+2026-06-04T08:19:30.807+02:00  INFO 44668 --- [td2biblio] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-04T08:19:30.871+02:00  INFO 44668 --- [td2biblio] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@566c1e71
+2026-06-04T08:19:30.872+02:00  INFO 44668 --- [td2biblio] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-04T08:19:30.882+02:00  INFO 44668 --- [td2biblio] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5432/TD2Java?currentSchema=biblio (PostgreSQL 18.3)
+2026-06-04T08:19:30.898+02:00  INFO 44668 --- [td2biblio] [main] o.f.core.internal.command.DbValidate     : Successfully validated 3 migrations (execution time 00:00.008s)
+2026-06-04T08:19:30.928+02:00  INFO 44668 --- [td2biblio] [main] o.f.core.internal.command.DbMigrate      : Current version of schema "biblio": 3
+2026-06-04T08:19:30.929+02:00  INFO 44668 --- [td2biblio] [main] o.f.core.internal.command.DbMigrate      : Schema "biblio" is up to date. No migration necessary.
+2026-06-04T08:19:30.962+02:00  INFO 44668 --- [td2biblio] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-04T08:19:30.978+02:00  INFO 44668 --- [td2biblio] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-04T08:19:31.113+02:00  INFO 44668 --- [td2biblio] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-04T08:19:31.141+02:00  INFO 44668 --- [td2biblio] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/TD2Java?currentSchema=biblio]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.3
+	Default catalog/schema: TD2Java/biblio
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-04T08:19:31.400+02:00  INFO 44668 --- [td2biblio] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-04T08:19:31.403+02:00  INFO 44668 --- [td2biblio] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-04T08:19:31.430+02:00  INFO 44668 --- [td2biblio] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-04T08:19:31.495+02:00  WARN 44668 --- [td2biblio] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-04T08:19:31.619+02:00  INFO 44668 --- [td2biblio] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-06-04T08:19:31.643+02:00  INFO 44668 --- [td2biblio] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-06-04T08:19:31.646+02:00  INFO 44668 --- [td2biblio] [main] c.usmb.td2biblio.Td2biblioApplication    : Started Td2biblioApplication in 1.553 seconds (process running for 1.682)
+2026-06-04T08:19:36.521+02:00  INFO 44668 --- [td2biblio] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-04T08:19:36.522+02:00  INFO 44668 --- [td2biblio] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-04T08:19:36.523+02:00  INFO 44668 --- [td2biblio] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-06-04T08:19:56.441+02:00  INFO 44668 --- [td2biblio] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-04T08:19:56.447+02:00  INFO 44668 --- [td2biblio] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-04T08:19:56.449+02:00  INFO 44668 --- [td2biblio] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-04T08:19:56.450+02:00  INFO 44668 --- [td2biblio] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-04T08:19:56.451+02:00  INFO 44668 --- [td2biblio] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-04T08:20:11.789+02:00  INFO 44763 --- [td2biblio] [main] c.usmb.td2biblio.Td2biblioApplication    : Starting Td2biblioApplication using Java 26.0.1 with PID 44763 (/Users/servonnm/Documents/Ecole/R6.A.06/td2biblio/build/classes/java/main started by servonnm in /Users/servonnm/Documents/Ecole/R6.A.06/td2biblio)
+2026-06-04T08:20:11.790+02:00  INFO 44763 --- [td2biblio] [main] c.usmb.td2biblio.Td2biblioApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-06-04T08:20:12.054+02:00  INFO 44763 --- [td2biblio] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-04T08:20:12.070+02:00  INFO 44763 --- [td2biblio] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 2 JPA repository interfaces.
+2026-06-04T08:20:12.220+02:00  INFO 44763 --- [td2biblio] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-06-04T08:20:12.224+02:00  INFO 44763 --- [td2biblio] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-04T08:20:12.224+02:00  INFO 44763 --- [td2biblio] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-04T08:20:12.240+02:00  INFO 44763 --- [td2biblio] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 434 ms
+2026-06-04T08:20:12.355+02:00  INFO 44763 --- [td2biblio] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-04T08:20:12.415+02:00  INFO 44763 --- [td2biblio] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@54326e9
+2026-06-04T08:20:12.415+02:00  INFO 44763 --- [td2biblio] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-04T08:20:12.424+02:00  INFO 44763 --- [td2biblio] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5432/TD2Java?currentSchema=biblio (PostgreSQL 18.3)
+2026-06-04T08:20:12.440+02:00  INFO 44763 --- [td2biblio] [main] o.f.core.internal.command.DbValidate     : Successfully validated 3 migrations (execution time 00:00.008s)
+2026-06-04T08:20:12.474+02:00  INFO 44763 --- [td2biblio] [main] o.f.core.internal.command.DbMigrate      : Current version of schema "biblio": 3
+2026-06-04T08:20:12.475+02:00  INFO 44763 --- [td2biblio] [main] o.f.core.internal.command.DbMigrate      : Schema "biblio" is up to date. No migration necessary.
+2026-06-04T08:20:12.507+02:00  INFO 44763 --- [td2biblio] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-04T08:20:12.523+02:00  INFO 44763 --- [td2biblio] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-04T08:20:12.645+02:00  INFO 44763 --- [td2biblio] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-04T08:20:12.671+02:00  INFO 44763 --- [td2biblio] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/TD2Java?currentSchema=biblio]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.3
+	Default catalog/schema: TD2Java/biblio
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-04T08:20:12.922+02:00  INFO 44763 --- [td2biblio] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-04T08:20:12.924+02:00  INFO 44763 --- [td2biblio] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-04T08:20:12.947+02:00  INFO 44763 --- [td2biblio] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-04T08:20:13.027+02:00  WARN 44763 --- [td2biblio] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-04T08:20:13.039+02:00  INFO 44763 --- [td2biblio] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-06-04T08:20:13.162+02:00  INFO 44763 --- [td2biblio] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-06-04T08:20:13.185+02:00  INFO 44763 --- [td2biblio] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-06-04T08:20:13.188+02:00  INFO 44763 --- [td2biblio] [main] c.usmb.td2biblio.Td2biblioApplication    : Started Td2biblioApplication in 1.536 seconds (process running for 1.655)
+2026-06-04T08:20:18.768+02:00  INFO 44763 --- [td2biblio] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-04T08:20:18.769+02:00  INFO 44763 --- [td2biblio] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-04T08:20:18.770+02:00  INFO 44763 --- [td2biblio] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-06-04T08:20:18.982+02:00  INFO 44763 --- [td2biblio] [http-nio-8080-exec-10] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 82 ms
+2026-06-04T08:23:38.798+02:00  INFO 44763 --- [td2biblio] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-04T08:23:38.801+02:00  INFO 44763 --- [td2biblio] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-04T08:23:38.803+02:00  INFO 44763 --- [td2biblio] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-04T08:23:38.804+02:00  INFO 44763 --- [td2biblio] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-04T08:23:38.805+02:00  INFO 44763 --- [td2biblio] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-04T08:33:21.387+02:00  INFO 45142 --- [td2biblio] [Test worker] c.u.td2biblio.Td2biblioApplicationTests  : Starting Td2biblioApplicationTests using Java 26.0.1 with PID 45142 (started by servonnm in /Users/servonnm/Documents/Ecole/R6.A.06/td2biblio)
+2026-06-04T08:33:21.389+02:00  INFO 45142 --- [td2biblio] [Test worker] c.u.td2biblio.Td2biblioApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2026-06-04T08:33:21.893+02:00  INFO 45142 --- [td2biblio] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-04T08:33:21.921+02:00  INFO 45142 --- [td2biblio] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 2 JPA repository interfaces.
+2026-06-04T08:33:22.230+02:00  INFO 45142 --- [td2biblio] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-04T08:33:22.320+02:00  INFO 45142 --- [td2biblio] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7e63ba1a
+2026-06-04T08:33:22.321+02:00  INFO 45142 --- [td2biblio] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-04T08:33:22.339+02:00  INFO 45142 --- [td2biblio] [Test worker] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5432/TD2Java?currentSchema=biblio (PostgreSQL 18.3)
+2026-06-04T08:33:22.373+02:00  INFO 45142 --- [td2biblio] [Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 3 migrations (execution time 00:00.017s)
+2026-06-04T08:33:22.418+02:00  INFO 45142 --- [td2biblio] [Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema "biblio": 3
+2026-06-04T08:33:22.420+02:00  INFO 45142 --- [td2biblio] [Test worker] o.f.core.internal.command.DbMigrate      : Schema "biblio" is up to date. No migration necessary.
+2026-06-04T08:33:22.480+02:00  INFO 45142 --- [td2biblio] [Test worker] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-04T08:33:22.522+02:00  INFO 45142 --- [td2biblio] [Test worker] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-04T08:33:22.798+02:00  INFO 45142 --- [td2biblio] [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-04T08:33:22.856+02:00  INFO 45142 --- [td2biblio] [Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/TD2Java?currentSchema=biblio]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.3
+	Default catalog/schema: TD2Java/biblio
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-04T08:33:23.358+02:00  INFO 45142 --- [td2biblio] [Test worker] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-04T08:33:23.362+02:00  INFO 45142 --- [td2biblio] [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-04T08:33:23.399+02:00  INFO 45142 --- [td2biblio] [Test worker] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-04T08:33:23.570+02:00  WARN 45142 --- [td2biblio] [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-04T08:33:23.590+02:00  INFO 45142 --- [td2biblio] [Test worker] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-06-04T08:33:23.891+02:00  INFO 45142 --- [td2biblio] [Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-06-04T08:33:23.920+02:00  INFO 45142 --- [td2biblio] [Test worker] c.u.td2biblio.Td2biblioApplicationTests  : Started Td2biblioApplicationTests in 2.69 seconds (process running for 3.486)
+2026-06-04T08:33:24.201+02:00  INFO 45142 --- [td2biblio] [Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.usmb.td2biblio.controller.AuteurControllerMockTest]: AuteurControllerMockTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-06-04T08:33:24.206+02:00  INFO 45142 --- [td2biblio] [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.usmb.td2biblio.Td2biblioApplication for test class com.usmb.td2biblio.controller.AuteurControllerMockTest
+2026-06-04T08:33:24.206+02:00  INFO 45142 --- [td2biblio] [Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.usmb.td2biblio.controller.AuteurControllerMockTest]: AuteurControllerMockTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-06-04T08:33:24.207+02:00  INFO 45142 --- [td2biblio] [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.usmb.td2biblio.Td2biblioApplication for test class com.usmb.td2biblio.controller.AuteurControllerMockTest
+2026-06-04T08:33:24.213+02:00  INFO 45142 --- [td2biblio] [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-06-04T08:33:24.213+02:00  INFO 45142 --- [td2biblio] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-06-04T08:33:24.214+02:00  INFO 45142 --- [td2biblio] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2026-06-04T08:33:24.447+02:00  INFO 45142 --- [td2biblio] [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-06-04T08:33:24.447+02:00  INFO 45142 --- [td2biblio] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-06-04T08:33:24.448+02:00  INFO 45142 --- [td2biblio] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2026-06-04T08:33:24.465+02:00  INFO 45142 --- [td2biblio] [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-06-04T08:33:24.465+02:00  INFO 45142 --- [td2biblio] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-06-04T08:33:24.466+02:00  INFO 45142 --- [td2biblio] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2026-06-04T08:33:24.657+02:00  INFO 45142 --- [td2biblio] [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-06-04T08:33:24.657+02:00  INFO 45142 --- [td2biblio] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-06-04T08:33:24.658+02:00  INFO 45142 --- [td2biblio] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2026-06-04T08:33:24.668+02:00  INFO 45142 --- [td2biblio] [Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.usmb.td2biblio.controller.AuteurControllerTest]: AuteurControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-06-04T08:33:24.671+02:00  INFO 45142 --- [td2biblio] [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.usmb.td2biblio.Td2biblioApplication for test class com.usmb.td2biblio.controller.AuteurControllerTest
+2026-06-04T08:33:24.672+02:00  INFO 45142 --- [td2biblio] [Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.usmb.td2biblio.controller.AuteurControllerTest]: AuteurControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-06-04T08:33:24.672+02:00  INFO 45142 --- [td2biblio] [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.usmb.td2biblio.Td2biblioApplication for test class com.usmb.td2biblio.controller.AuteurControllerTest
+2026-06-04T08:33:24.686+02:00  INFO 45142 --- [td2biblio] [Test worker] c.u.t.controller.AuteurControllerTest    : Starting AuteurControllerTest using Java 26.0.1 with PID 45142 (started by servonnm in /Users/servonnm/Documents/Ecole/R6.A.06/td2biblio)
+2026-06-04T08:33:24.686+02:00  INFO 45142 --- [td2biblio] [Test worker] c.u.t.controller.AuteurControllerTest    : No active profile set, falling back to 1 default profile: "default"
+2026-06-04T08:33:24.760+02:00  INFO 45142 --- [td2biblio] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-04T08:33:24.764+02:00  INFO 45142 --- [td2biblio] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 2 JPA repository interfaces.
+2026-06-04T08:33:24.884+02:00  INFO 45142 --- [td2biblio] [Test worker] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 0 (http)
+2026-06-04T08:33:24.895+02:00  INFO 45142 --- [td2biblio] [Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-04T08:33:24.896+02:00  INFO 45142 --- [td2biblio] [Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-04T08:33:24.922+02:00  INFO 45142 --- [td2biblio] [Test worker] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 236 ms
+2026-06-04T08:33:24.974+02:00  INFO 45142 --- [td2biblio] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-06-04T08:33:25.008+02:00  INFO 45142 --- [td2biblio] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@14116d6a
+2026-06-04T08:33:25.009+02:00  INFO 45142 --- [td2biblio] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-06-04T08:33:25.010+02:00  INFO 45142 --- [td2biblio] [Test worker] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5432/TD2Java?currentSchema=biblio (PostgreSQL 18.3)
+2026-06-04T08:33:25.015+02:00  INFO 45142 --- [td2biblio] [Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 3 migrations (execution time 00:00.002s)
+2026-06-04T08:33:25.035+02:00  INFO 45142 --- [td2biblio] [Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema "biblio": 3
+2026-06-04T08:33:25.035+02:00  INFO 45142 --- [td2biblio] [Test worker] o.f.core.internal.command.DbMigrate      : Schema "biblio" is up to date. No migration necessary.
+2026-06-04T08:33:25.041+02:00  INFO 45142 --- [td2biblio] [Test worker] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-04T08:33:25.048+02:00  INFO 45142 --- [td2biblio] [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-04T08:33:25.052+02:00  INFO 45142 --- [td2biblio] [Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/TD2Java?currentSchema=biblio]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.3
+	Default catalog/schema: TD2Java/biblio
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-04T08:33:25.063+02:00  INFO 45142 --- [td2biblio] [Test worker] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-04T08:33:25.064+02:00  INFO 45142 --- [td2biblio] [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-04T08:33:25.081+02:00  WARN 45142 --- [td2biblio] [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-04T08:33:25.085+02:00  INFO 45142 --- [td2biblio] [Test worker] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-06-04T08:33:25.194+02:00  INFO 45142 --- [td2biblio] [Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-06-04T08:33:25.208+02:00  INFO 45142 --- [td2biblio] [Test worker] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 51920 (http) with context path '/'
+2026-06-04T08:33:25.210+02:00  INFO 45142 --- [td2biblio] [Test worker] c.u.t.controller.AuteurControllerTest    : Started AuteurControllerTest in 0.535 seconds (process running for 4.776)
+2026-06-04T08:33:25.271+02:00  INFO 45142 --- [td2biblio] [http-nio-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-04T08:33:25.271+02:00  INFO 45142 --- [td2biblio] [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-04T08:33:25.272+02:00  INFO 45142 --- [td2biblio] [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-06-04T08:33:25.432+02:00  INFO 45142 --- [td2biblio] [Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.usmb.td2biblio.controller.LivreControllerMockTest]: LivreControllerMockTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-06-04T08:33:25.433+02:00  INFO 45142 --- [td2biblio] [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.usmb.td2biblio.Td2biblioApplication for test class com.usmb.td2biblio.controller.LivreControllerMockTest
+2026-06-04T08:33:25.434+02:00  INFO 45142 --- [td2biblio] [Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.usmb.td2biblio.controller.LivreControllerMockTest]: LivreControllerMockTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-06-04T08:33:25.434+02:00  INFO 45142 --- [td2biblio] [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.usmb.td2biblio.Td2biblioApplication for test class com.usmb.td2biblio.controller.LivreControllerMockTest
+2026-06-04T08:33:25.436+02:00  INFO 45142 --- [td2biblio] [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-06-04T08:33:25.436+02:00  INFO 45142 --- [td2biblio] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-06-04T08:33:25.437+02:00  INFO 45142 --- [td2biblio] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2026-06-04T08:33:25.444+02:00  INFO 45142 --- [td2biblio] [Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-06-04T08:33:25.444+02:00  INFO 45142 --- [td2biblio] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-06-04T08:33:25.444+02:00  INFO 45142 --- [td2biblio] [Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2026-06-04T08:33:25.448+02:00  INFO 45142 --- [td2biblio] [Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.usmb.td2biblio.controller.LivreControllerSansAssertj]: LivreControllerSansAssertj does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-06-04T08:33:25.449+02:00  INFO 45142 --- [td2biblio] [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.usmb.td2biblio.Td2biblioApplication for test class com.usmb.td2biblio.controller.LivreControllerSansAssertj
+2026-06-04T08:33:25.449+02:00  INFO 45142 --- [td2biblio] [Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.usmb.td2biblio.controller.LivreControllerSansAssertj]: LivreControllerSansAssertj does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-06-04T08:33:25.449+02:00  INFO 45142 --- [td2biblio] [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.usmb.td2biblio.Td2biblioApplication for test class com.usmb.td2biblio.controller.LivreControllerSansAssertj
+2026-06-04T08:33:25.474+02:00  INFO 45142 --- [td2biblio] [http-nio-auto-1-exec-6] c.usmb.td2biblio.service.LivreService    : Livre updated with id 3
+2026-06-04T08:33:25.501+02:00  INFO 45142 --- [td2biblio] [http-nio-auto-1-exec-10] c.usmb.td2biblio.service.LivreService    : Livre saved with id 16
+2026-06-04T08:33:25.507+02:00  INFO 45142 --- [td2biblio] [Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.usmb.td2biblio.controller.LivreControllerTest]: LivreControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-06-04T08:33:25.508+02:00  INFO 45142 --- [td2biblio] [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.usmb.td2biblio.Td2biblioApplication for test class com.usmb.td2biblio.controller.LivreControllerTest
+2026-06-04T08:33:25.509+02:00  INFO 45142 --- [td2biblio] [Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.usmb.td2biblio.controller.LivreControllerTest]: LivreControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-06-04T08:33:25.509+02:00  INFO 45142 --- [td2biblio] [Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.usmb.td2biblio.Td2biblioApplication for test class com.usmb.td2biblio.controller.LivreControllerTest
+2026-06-04T08:33:25.524+02:00  INFO 45142 --- [td2biblio] [http-nio-auto-1-exec-4] c.usmb.td2biblio.service.LivreService    : Livre updated with id 3
+2026-06-04T08:33:25.555+02:00  INFO 45142 --- [td2biblio] [http-nio-auto-1-exec-9] c.usmb.td2biblio.service.LivreService    : Livre saved with id 17
+2026-06-04T08:33:25.589+02:00  INFO 45142 --- [td2biblio] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-04T08:33:25.590+02:00  INFO 45142 --- [td2biblio] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-04T08:33:25.591+02:00  INFO 45142 --- [td2biblio] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-04T08:33:25.593+02:00  INFO 45142 --- [td2biblio] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-04T08:33:25.596+02:00  INFO 45142 --- [td2biblio] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-06-04T08:33:25.597+02:00  INFO 45142 --- [td2biblio] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-04T08:33:25.598+02:00  INFO 45142 --- [td2biblio] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2026-06-04T08:33:25.598+02:00  INFO 45142 --- [td2biblio] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
